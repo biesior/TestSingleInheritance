@@ -1,0 +1,13 @@
+@(data: models.view.ApplicationIndex)
+
+@main(data.pageTitle) {
+
+    <h1>@data.pageTitle</h1>
+
+    <ul>
+    @for(content <- data.contents) {
+        <li><b>@content.id</b> @content.dtype: @content.title [@content.created]</li>
+    }
+    </ul>
+
+}
