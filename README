@@ -1,4 +1,7 @@
-This is your new Play application
+Sample usage of inherited tables
 =================================
 
-This file will be packaged with your application, when using `activator dist`.
+ - Play ver.: 2.3.x
+ - Database models are placed in `models.db` package
+ - `News`, `Video` and `Post` models extends `Content`
+ - all types uses a `content` table with `dtype` discriminator
